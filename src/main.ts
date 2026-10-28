@@ -131,9 +131,7 @@ async function bootstrap() {
   );
 
   await app.startAllMicroservices();
-
   app.enableShutdownHooks();
-
   await app.listen(port ?? 5000);
 
   logger.log(`🚀 Notification service is running on port ${port}`);
